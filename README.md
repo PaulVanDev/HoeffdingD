@@ -11,7 +11,7 @@ http://support.sas.com/documentation/cdl/en/procstat/67528/HTML/default/viewer.h
 HoeffdingD is proposed as non-parametric correaltion method in SAS and in JMP softwares
 
 https://github.com/pandas-dev/pandas/issues/22086
--> a reqast for hoeffdingD in pandas
+-> a request for hoeffdingD in pandas
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4539721/
 -> more explanations on the need for non-pearson correlation methods
