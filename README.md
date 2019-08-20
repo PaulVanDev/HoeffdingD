@@ -1,4 +1,7 @@
 
+The HoeffdingD statistic is robust against a wide variety of alternatives to independence, such as non-monotonic relationships. The larger the value of D, the more dependent are X and Y.
+
+
 You will find below some links related to the need for an implementation of Hoeffding Distance in Python
 
 Links:
