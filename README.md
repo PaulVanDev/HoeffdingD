@@ -18,3 +18,7 @@ https://github.com/pandas-dev/pandas/issues/22086
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4539721/
 -> more explanations on the need for non-pearson correlation methods
+
+
+http://math.furman.edu/~dcs/courses/math47/R/library/Hmisc/html/hoeffd.html
+-> statistical explanation
