@@ -22,3 +22,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4539721/
 
 http://math.furman.edu/~dcs/courses/math47/R/library/Hmisc/html/hoeffd.html
 -> statistical explanation
+
+https://stats.stackexchange.com/questions/20011/can-the-mic-algorithm-for-detecting-non-linear-correlations-be-explained-intuiti
+->more discussion and comparison with MIC algorithm - Mutual Information Coefficient
