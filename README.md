@@ -8,7 +8,7 @@ The advantage of this statistic lies in the fact that it has more power to detec
 compared to other more common measures (Pearson, Kendall, Sparman)
 
 
-
+<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG" style="width:25%; height:auto;"/></a>
 
 
 
