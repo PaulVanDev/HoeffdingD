@@ -7,6 +7,13 @@ between joint distribution, F(x, y) and product of marginal distributions, FX(x)
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Sparman)
 
+
+
+
+
+
+
+
 ## [Adaptation of Hoeffding's D in Python](https://github.com/PaulVanDev/HoeffdingD/blob/master/EfficientHoeffdingD.ipynb)
 
 Development
