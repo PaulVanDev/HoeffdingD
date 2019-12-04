@@ -1,15 +1,5 @@
----
-layout: default
-description: Welcome to my work
-heading: |
-    <h1 class="title1">Paul Vanabelle</h1>
-    <h4 class="title2">Senior Research Engineer</h4>
-    <h5 class="title2">Data Science Department</h5>
-    <p class="fig">
-    <a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="width:200px;"></a>
-    </p>
----
 
+## [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
 with continuous distribution functions.Hoeffding’s D is a nonparametric measure of the distance
