@@ -1,5 +1,5 @@
 
-## [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
+## [Adaptation of Hoeffding's D in Python](http://PaulVanDev.github.io/hoeffdingD)
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
 with continuous distribution functions.Hoeffding’s D is a nonparametric measure of the distance
