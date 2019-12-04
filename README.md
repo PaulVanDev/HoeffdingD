@@ -7,7 +7,7 @@ between joint distribution, F(x, y) and product of marginal distributions, FX(x)
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Sparman)
 
-## Adaptation of Hoeffding's D in Python
+## [Adaptation of Hoeffding's D in Python](https://github.com/PaulVanDev/HoeffdingD/blob/master/EfficientHoeffdingD.ipynb)
 
 Development
 1. Starting algorithm in matlab
@@ -15,7 +15,7 @@ Development
 3. Code Optimisation - complexity O(n²)  (33x faster on 1000 points -> 2,40ms)
 4. Constrained Algorithm-> binning on entries (50) and resampling if n >100000 – acceptable approximation
 5. Support DataFrame as input
-6. Compatible with correlation function corrélation in Pandas
+6. Compatible with correlation function correlation in Pandas
 	
 	               df.corr( ʺpearson ʺ)  df.corr( ʺSpearmanʺ) 
 		                ->  df.corr(method=Efficienthoeffding)
