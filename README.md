@@ -1,5 +1,5 @@
 
-## [Adaptation of Hoeffding's D in Python](http://PaulVanDev.github.io/hoeffdingD/EfficientHoeffdingD.ipynb)
+
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
 with continuous distribution functions.Hoeffding’s D is a nonparametric measure of the distance
@@ -7,11 +7,25 @@ between joint distribution, F(x, y) and product of marginal distributions, FX(x)
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Sparman)
 
+## Adaptation of Hoeffding's D in Python
+
+Development
+1. Starting algorithm in matlab
+2. Rough Adaptation in python
+3. Code Optimisation - complexity O(n²)  (33x faster on 1000 points -> 2,40ms)
+4. Constrained Algorithm-> binning on entries (50) and resampling if n >100000 – acceptable approximation
+5. Support DataFrame as input
+6. Compatible with correlation function corrélation in Pandas
+	
+	               df.corr( ʺpearson ʺ)  df.corr( ʺSpearmanʺ) 
+		                ->  df.corr(method=Efficienthoeffding)
 
 
-******************************************************************************************************************************************
 
-References:
+
+*****************************************************************************************************************************************
+
+## References:
 
 https://stackoverflow.com/questions/9270496/ideas-for-gpu-implementation-of-hoeffdings-d-dependence-coefficient/9322657#9322657
 -> Code in matlab
