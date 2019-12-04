@@ -1,5 +1,5 @@
 
-## [Adaptation of Hoeffding's D in Python](http://PaulVanDev.github.io/hoeffdingD)
+## [Adaptation of Hoeffding's D in Python](http://PaulVanDev.github.io/hoeffdingD/EfficientHoeffdingD.ipynb)
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
 with continuous distribution functions.Hoeffding’s D is a nonparametric measure of the distance
