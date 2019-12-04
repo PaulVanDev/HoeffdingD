@@ -1,10 +1,27 @@
+---
+layout: default
+description: Welcome to my work
+heading: |
+    <h1 class="title1">Paul Vanabelle</h1>
+    <h4 class="title2">Senior Research Engineer</h4>
+    <h5 class="title2">Data Science Department</h5>
+    <p class="fig">
+    <a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="width:200px;"></a>
+    </p>
+---
 
-The HoeffdingD statistic is robust against a wide variety of alternatives to independence, such as non-monotonic relationships. The larger the value of D, the more dependent are X and Y.
+
+Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
+with continuous distribution functions.Hoeffding’s D is a nonparametric measure of the distance
+between joint distribution, F(x, y) and product of marginal distributions, FX(x)FY(y).
+The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
+compared to other more common measures (Pearson, Kendall, Sparman)
 
 
-You will find below some links related to the need for an implementation of Hoeffding Distance in Python
 
-Links:
+******************************************************************************************************************************************
+
+References:
 
 https://stackoverflow.com/questions/9270496/ideas-for-gpu-implementation-of-hoeffdings-d-dependence-coefficient/9322657#9322657
 -> Code in matlab
@@ -25,3 +42,5 @@ http://math.furman.edu/~dcs/courses/math47/R/library/Hmisc/html/hoeffd.html
 
 https://stats.stackexchange.com/questions/20011/can-the-mic-algorithm-for-detecting-non-linear-correlations-be-explained-intuiti
 ->more discussion and comparison with MIC algorithm - Mutual Information Coefficient
+
+https://journal.r-project.org/archive/2018/RJ-2018-057/RJ-2018-057.pdf
