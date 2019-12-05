@@ -9,7 +9,7 @@ compared to other more common measures (Pearson, Kendall, Spearman)
 
 
 
-<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG" style="width:16%; height:auto;"/></a>
+<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG" style="width:30%; height:auto;"/></a>
 
 
 
@@ -28,7 +28,7 @@ Development
 		                ->  df.corr(method=Efficienthoeffding)
 
 
-<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:16%; height:auto;"/></a>
+<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:30%; height:auto;"/></a>
 
 
 *****************************************************************************************************************************************
