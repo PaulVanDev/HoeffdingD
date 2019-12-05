@@ -2,7 +2,7 @@
 
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
-with continuous distribution functions.Hoeffding’s D is a nonparametric measure of the distance
+with continuous distribution functions. Hoeffding’s D is a nonparametric measure of the distance
 between joint distribution, F(x, y) and product of marginal distributions, FX(x)FY(y).
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Sparman)
