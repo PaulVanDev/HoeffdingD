@@ -30,6 +30,7 @@ Development
 
 <a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:15%; height:auto;"/></a>
 
+
 *****************************************************************************************************************************************
 
 ## References:
