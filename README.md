@@ -32,18 +32,18 @@ Development
 
 from  XtendedCorrel import hoeffding
 
-### Direct on numpy series
+##
 
 hoeffding(x,y)
 
-### Pandas dataframe as input
+##
 Compute pairwise correlation of columns, excluding NA/null values.
 
 hoeffding(df)
 
-### As method in pandas.corr function 
 
-df.corr(method=hoeffding)  // df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
+
+df.corr(method=hoeffding)  
 		           
 
 #### Examples:
@@ -55,20 +55,24 @@ x=np.random.randint(70, size=200000)
 y=(np.random.randint(70, size=200000)*x)
 df=pd.DataFrame({ 'x': x, 'y': y } )
 
+# Direct on numpy series
 hoeffding(x,y)     
 #out: 0.19021676396645915
 
+# Pandas dataframe as input
 hoeffding(df)
 #out:
 #        x	        y
 #x	0.944652	0.188405
 #y	0.188405	0.950448
 
+# As method in pandas.corr function similar to df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
 df.corr(method=hoeffding)
+
 #out:
 #        x	        y
-#x	0.944652	0.188405
-#y	0.188405	0.950448
+#x	1        	0.188405
+#y	0.188405	1
 
 ```
 
