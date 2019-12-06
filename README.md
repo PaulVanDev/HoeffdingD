@@ -28,7 +28,7 @@ Development
 
 ## How to use:
 
-Download XtendedCorrel.py
+->Download XtendedCorrel.py
 
 from  XtendedCorrel import hoeffding
 
@@ -37,6 +37,7 @@ from  XtendedCorrel import hoeffding
 hoeffding(x,y)
 
 ### Pandas dataframe as input
+Compute pairwise correlation of columns, excluding NA/null values.
 
 hoeffding(df)
 
@@ -45,8 +46,16 @@ hoeffding(df)
 df.corr(method=hoeffding)  // df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
 		           
 
+Examples:
 
+import numpy as np
+from  XtendedCorrel import hoeffding
 
+x=np.random.randint(70, size=200000)
+y=(np.random.randint(70, size=200000)*x)
+
+hoeffding(x,y)
+out: 0.19021676396645915
 
 
 
