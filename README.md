@@ -14,7 +14,7 @@ compared to other more common measures (Pearson, Kendall, Spearman)
 
 
 
-## [Adaptation of Hoeffding's D in Python](https://github.com/PaulVanDev/HoeffdingD/blob/master/EfficientHoeffdingD.ipynb)
+## [Adaptation of Hoeffding's D in Python - for large datasets](https://github.com/PaulVanDev/HoeffdingD/blob/master/EfficientHoeffdingD.ipynb)
 
 Development
 1. Starting algorithm in matlab
@@ -24,11 +24,30 @@ Development
 5. Support DataFrame as input
 6. Compatible with correlation function correlation in Pandas
 	
-	               df.corr( ʺpearson ʺ)  df.corr( ʺSpearmanʺ) 
-		                ->  df.corr(method=Efficienthoeffding)
-
-
 <a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:30%; height:auto;"/></a>
+
+## How to use:
+
+Download XtendedCorrel.py
+
+from  XtendedCorrel import hoeffding
+
+# Direct on numpy series
+
+hoeffding(x,y)
+
+# Pandas dataframe as input
+
+hoeffding(df)
+
+# As method in pandas.corr function 
+
+df.corr(method=hoeffding)  // df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
+		           
+
+
+
+
 
 
 *****************************************************************************************************************************************
