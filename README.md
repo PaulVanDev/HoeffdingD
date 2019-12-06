@@ -32,15 +32,15 @@ Download XtendedCorrel.py
 
 from  XtendedCorrel import hoeffding
 
-# Direct on numpy series
+### Direct on numpy series
 
 hoeffding(x,y)
 
-# Pandas dataframe as input
+### Pandas dataframe as input
 
 hoeffding(df)
 
-# As method in pandas.corr function 
+### As method in pandas.corr function 
 
 df.corr(method=hoeffding)  // df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
 		           
