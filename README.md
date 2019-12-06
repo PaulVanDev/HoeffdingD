@@ -22,7 +22,7 @@ Development
 3. Code Optimisation - complexity O(n²)  (33x faster on 1000 points -> 2,40ms)
 4. Constrained Algorithm-> binning on entries (50) and resampling if n >100000 – acceptable approximation
 5. Support DataFrame as input
-6. Compatible with correlation function correlation in Pandas
+6. Compatible with correlation function correlation in Pandas (from v0.24)
 	
 <a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:30%; height:auto;"/></a>
 
@@ -55,7 +55,7 @@ hoeffding(df)
 #with identical values, the Hoeffding’s D statistic might be less than 1"
 
 #If pandas version > or =  to 0.24
-#As callable method in pandas.corr function similar to df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
+#as callable method in pandas.corr function similar to df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
 
 df.corr(method=hoeffding)
 
