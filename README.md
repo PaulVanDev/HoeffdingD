@@ -50,7 +50,9 @@ hoeffding(df)
 #x	0.944652	0.188405
 #y	0.188405	0.950448
 
-# hoeffding(x,x) not equal to 1 
+# hoeffding(x,x) not equal to 1 :
+#From SAS explanations : "When ties occur, the statistic might result in a smaller value. That is, for a pair of variables 
+#with identical values, the Hoeffding’s D statistic might be less than 1"
 
 #If pandas version > or =  to 0.24
 #As callable method in pandas.corr function similar to df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
@@ -62,7 +64,7 @@ df.corr(method=hoeffding)
 #x	1        	0.188405
 #y	0.188405	1
 
-#
+# hoeffding(x,x) equal to 1 : Forced by corr() function
 
 
 ```
