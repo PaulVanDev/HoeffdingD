@@ -46,21 +46,31 @@ hoeffding(df)
 df.corr(method=hoeffding)  // df.corr( ʺpearson ʺ) or df.corr( ʺSpearmanʺ) 
 		           
 
-Examples:
+#### Examples:
 ```
 import numpy as np
 from  XtendedCorrel import hoeffding
 
 x=np.random.randint(70, size=200000)
 y=(np.random.randint(70, size=200000)*x)
+df=pd.DataFrame({ 'x': x, 'y': y } )
 
-hoeffding(x,y)     #out: 0.19021676396645915
+hoeffding(x,y)     
+#out: 0.19021676396645915
+
 hoeffding(df)
-```
-        x	        y
-x	0.944652	0.188405
-y	0.188405	0.950448
+#out:
+#        x	        y
+#x	0.944652	0.188405
+#y	0.188405	0.950448
 
+df.corr(method=hoeffding)
+#out:
+#        x	        y
+#x	0.944652	0.188405
+#y	0.188405	0.950448
+
+```
 
 
 *****************************************************************************************************************************************
