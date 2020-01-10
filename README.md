@@ -35,7 +35,7 @@ The development steps were the followings:
 The graph below gives measured coefficients for the tested relations. The interesting point is the discriminative behaviour between a complex non-monotonic relation and pure independance.
 
 	
-<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:30%; height:auto;"/></a>
+<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:100%; height:auto;"/></a>
 
 ## How to use:
 
