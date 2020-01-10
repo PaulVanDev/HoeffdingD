@@ -7,7 +7,7 @@ between joint distribution, F(x, y) and product of marginal distributions, FX(x)
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Spearman) 
 
-Implementation in python was not existing and the algorithm presents an  O(n2) complexity. We propose here an effcient implementation in python3. 
+Implementation in python was not existing and the algorithm presents an  O(n2) complexity. We propose here an effecient implementation in python3. 
 
 
 
