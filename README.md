@@ -11,7 +11,7 @@ The following graph presents what we can expect to discover by using more advanc
 
 
 
-<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG" style="width:30%; height:auto;"/></a>
+<a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG" style="width:100%; height:auto;"/></a>
 
 
 
