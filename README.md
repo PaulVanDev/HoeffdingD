@@ -1,4 +1,4 @@
-
+# HoeffdingD - Just Another Correlation Coefficient 
 
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
