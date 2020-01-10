@@ -1,4 +1,4 @@
-# HoeffdingD - Just Another Correlation Coefficient for Pandas
+## Just Another Correlation Coefficient (Python|Pandas)
 
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test of correlation for two variables
