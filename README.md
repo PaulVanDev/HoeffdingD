@@ -7,7 +7,7 @@ between the joint distribution F(x, y) and the product of marginal distributions
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Spearman) 
 
-The following graph presents what we can expect more to discover by using more advanced correlation coefficients.
+The following graph presents what we can expect to discover by using more advanced correlation coefficients.
 
 
 
@@ -32,7 +32,7 @@ The development steps were the followings:
 6. Compatible with correlation function correlation in Pandas (from v0.24)
 	
 
-The following graph presents what we can expect more to discover by using more advanced correlation coefficients.
+The graph below gives measured coefficients for the tested relations. The interesting point is the discriminative behaviour between a complex non-monotonic relation and pure independance.
 
 	
 <a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:30%; height:auto;"/></a>
