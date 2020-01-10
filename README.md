@@ -7,6 +7,8 @@ between the joint distribution F(x, y) and the product of marginal distributions
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Spearman) 
 
+The following graph presents what we can expect more to discover by using more advanced correlation coefficients.
+
 
 
 <a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding.PNG" style="width:30%; height:auto;"/></a>
@@ -16,18 +18,22 @@ compared to other more common measures (Pearson, Kendall, Spearman)
 
 ## [Adaptation of Hoeffding's D in Python - for large datasets](https://github.com/PaulVanDev/HoeffdingD/blob/master/EfficientHoeffdingD.ipynb)
 
-A proper implementation in python is not existing so far. The original algorithm presents more complexity (O(n2)) than other popular correlation coefficients like Pearson or Spearman and was basically done for the statistics in the second part of the 20th century (which means a size order of ~100 points). Nowadays, the "big data period", it's common to search relations between time-series with millions of points. On could say that it is not often relevant (if there's no stationarity), but the move for automated analytical tools plays in favor of such develoment and by the way the remark is valid for other correlation coefficients. 
+A proper implementation in python is not existing so far. The original algorithm presents more complexity (O(n2)) than other popular correlation coefficients like Pearson or Spearman and was basically done for the statistics in the second part of the 20th century (which means a size order of ~100 points). Nowadays, the "big data period", it's common to search relations between time-series with millions of points. On could say that it is not often relevant (if there's no stationarity), but the move for automated analytical tools plays in favor of such develoment. The remark is anyway valid for other correlation coefficients. 
 This coefficient is available in some premium analytics sofware (SAS, JMP; in an efficient implementation), in R (which is originally more dedicated to statistics), in Matlab (for small data), but unavailable in Python.
 So we propose here an efficient implementation in python3, which is callable as a method by the corr() function for dataframe in Pandas. 
 
 
-Development steps:
+The development steps were the followings:
 1. Starting algorithm in Matlab
-2. Rough Adaptation in python
-3. Code Optimisation - complexity O(n²)  (33x faster on 1000 points -> 2,40ms)
-4. Constrained Algorithm-> binning on entries (50) and resampling if n >100000 – acceptable approximation
-5. Support DataFrame as input
+2. Rough adaptation in python
+3. Code optimisation - complexity O(n²)  (33x faster on 1000 points -> 2,40ms)
+4. Constrained algorithm-> binning on entries (50) and resampling if n >100000 – acceptable approximation
+5. Support dataFrame as input
 6. Compatible with correlation function correlation in Pandas (from v0.24)
+	
+
+The following graph presents what we can expect more to discover by using more advanced correlation coefficients.
+
 	
 <a href="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG"><img class="fig" src="https://paulvandev.github.io/HoeffdingD/pictures/Capture_hoeffding2.PNG" style="width:30%; height:auto;"/></a>
 
