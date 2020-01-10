@@ -1,4 +1,4 @@
-# HoeffdingD - Just Another Correlation Coefficient - Implementation in Python
+# HoeffdingD - Just Another Correlation Coefficient for Pandas
 
 
 Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test of correlation for two variables
@@ -18,7 +18,7 @@ compared to other more common measures (Pearson, Kendall, Spearman)
 
 A proper implementation in python is not existing so far. The original algorithm presents more complexity (O(n2)) than other popular correlation coefficients like Pearson or Spearman and was basically done for the statistics in the second part of the 20th century (which means a size order of ~100 points). Nowadays, the "big data period", it's common to search relations between time-series with millions of points. On could say that it is not often relevant (if there's no stationarity), but the move for automated analytical tools plays in favor of such develoment and by the way the remark is valid for other correlation coefficients. 
 This coefficient is available in some premium analytics sofware (SAS, JMP; in an efficient implementation), in R (which is originally more dedicated to statistics), in Matlab (for small data), but unavailable in Python.
-So we propose here an efficient implementation in python3. 
+So we propose here an efficient implementation in python3, which is callable as a method by the corr() function for dataframe in Pandas. 
 
 
 Development steps:
