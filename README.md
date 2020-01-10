@@ -1,13 +1,11 @@
-# HoeffdingD - Just Another Correlation Coefficient 
+# HoeffdingD - Just Another Correlation Coefficient - Implementation in Python
 
 
-Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test for two random variables
+Hoeffding’s test for dependence was proposed by Wassily Hoeffding (1948) as a test of correlation for two variables
 with continuous distribution functions. Hoeffding’s D is a nonparametric measure of the distance
-between joint distribution, F(x, y) and product of marginal distributions, FX(x)FY(y).
+between the joint distribution F(x, y) and the product of marginal distributions F1(x)F2(y).
 The advantage of this statistic lies in the fact that it has more power to detect non-monotonic dependency structures 
 compared to other more common measures (Pearson, Kendall, Spearman) 
-
-Implementation in python was not existing and the algorithm presents an  O(n2) complexity. We propose here an effecient implementation in python3. 
 
 
 
@@ -18,8 +16,13 @@ Implementation in python was not existing and the algorithm presents an  O(n2) c
 
 ## [Adaptation of Hoeffding's D in Python - for large datasets](https://github.com/PaulVanDev/HoeffdingD/blob/master/EfficientHoeffdingD.ipynb)
 
-Development
-1. Starting algorithm in matlab
+A proper implementation in python is not existing so far. The original algorithm presents more complexity (O(n2)) than other popular correlation coefficients like Pearson or Spearman and was basically done for the statistics in the second part of the 20th century (which means a size order of ~100 points). Nowadays, the "big data period", it's common to search relations between time-series with millions of points. On could say that it is not often relevant (if there's no stationarity), but the move for automated analytical tools plays in favor of such develoment and by the way the remark is valid for other correlation coefficients. 
+This coefficient is available in some premium analytics sofware (SAS, JMP; in an efficient implementation), in R (which is originally more dedicated to statistics), in Matlab (for small data), but unavailable in Python.
+So we propose here an efficient implementation in python3. 
+
+
+Development steps:
+1. Starting algorithm in Matlab
 2. Rough Adaptation in python
 3. Code Optimisation - complexity O(n²)  (33x faster on 1000 points -> 2,40ms)
 4. Constrained Algorithm-> binning on entries (50) and resampling if n >100000 – acceptable approximation
@@ -97,3 +100,6 @@ https://stats.stackexchange.com/questions/20011/can-the-mic-algorithm-for-detect
 ->more discussion and comparison with MIC algorithm - Mutual Information Coefficient
 
 https://journal.r-project.org/archive/2018/RJ-2018-057/RJ-2018-057.pdf
+
+https://www4.stat.ncsu.edu/~boos/library/mimeo.archive/ISMS_1994_2310.pdf
+-> Essay on contribution of Wassily Hoeffding to statistics and probability
